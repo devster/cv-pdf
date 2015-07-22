@@ -1,0 +1,125 @@
+colors:
+    pageBorder: [10,9,5,87]
+    dark: [10,9,5,87]
+    light: [0,0,0,75]
+    textlight: [0,0,0,85]
+    links: [0,0,0,85]
+meta:
+    creator: https://github.com/devster/cv-pdf
+    title: Resume 2015 Jeremy Perret
+    subject: Resume 2015 Jeremy Perret
+    author: Jeremy PERRET
+
+name: zsef esf sff
+title: "Lead developper web & Expert PHP, 7 years XP"
+image: portrait.jpg
+
+menu:
+    experience: Experience
+    education: Education
+    skills: Skills
+    contact: Contact
+    profile: Profile
+
+contact:
+    Phone: +33 00 6 09 88 25 39
+    Email: jeremy@devster.org
+    Address: "3 rue Denuzière 69002 Lyon, France"
+    Github: https://github.com/devster
+
+education:
+    -
+        title: "Licence STIC, Ecole SUP' La Mache"
+        date: 2008 - 2009
+        content: >
+            Licence STIC - Chef de projet Informatique
+            <br>Lyon, 69008
+    -
+        title: "BTS IRIS, Lycée ORT"
+        date: 2006 - 2008
+        content: >
+            Obtention BTS Informatique Industrielle Option développement
+            <br>Lyon, 69008
+
+    -
+        title: "Bac S, Lycée agricole Edouard-Herriot"
+        date: 2005 - 2006
+        content: >
+            Obtention Baccalauréat Scientifique
+            <br>Misérieux, 01600
+
+experiences:
+    -
+        title: "Harvard University, London"
+        date: 2004 - 2005
+        content: >
+            Por repelen imincit aepellenimus sinte sitatur, te est et quae rectaturodi
+            net andelique escitin umquis dolupta sime nat elia.
+    -
+        title: "Harvard University, London"
+        date: 2004 - 2005
+        content: >
+            Por repelen imincit aepellenimus sinte sitatur, te est et quae rectaturodi
+            net andelique escitin umquis dolupta sime nat elia.
+    -
+        title: "Harvard University, London"
+        date: 2004 - 2005
+        content: >
+            Por repelen imincit aepellenimus sinte sitatur, te est et quae rectaturodi
+            net andelique escitin umquis dolupta sime nat elia.
+    -
+        title: "Harvard University, London"
+        date: 2004 - 2005
+        content: >
+            Por repelen imincit aepellenimus sinte sitatur, te est et quae rectaturodi
+            net andelique escitin umquis dolupta sime nat elia.
+    -
+        title: "Harvard University, London"
+        date: 2004 - 2005
+        content: >
+            Por repelen imincit aepellenimus sinte sitatur, te est et quae rectaturodi
+            net andelique escitin umquis dolupta sime nat elia.
+    -
+        title: "Freelance"
+        date: depuis 2013
+        content: >
+             - <strong><a href="http://priority.bnpparibas.com/privileges/fr-fr/">Banque BNP Paribas</a></strong>: Site de contenu international. PHP/Symfony2/MySQL/Vagrant
+            <br>- <strong><a href="http://jaune-pivoine.fr">Jaune Pivoine</a></strong>: Site vitrine, portfolio - Hébergement. PHP/Symfony/Docker/Nginx
+    -
+        title: "Développeur web, Institut Paul Bocuse"
+        date: 2007
+        content: >
+            Création d'un outil intranet de réservation du restaurant
+            <br>PHP / MySQL
+
+profile: >
+    Ximincture videre re occabore cum ad
+    quame vollictiasi dolorrum eria sequi
+    custemporae dendionse volor sequi
+    te adi denis nonsequ aecerum iur, cum
+    simus arit, quid mod qui de necto eatur,
+    cus, simoles debit moloratasint quam
+    erum, ut velique nectur acia quas-
+    sin velecto tem cone debitiasit lam et,
+    ommolup taepers peribeaquunt que
+    soloribus ersped que liquaspeliti volupis
+    quo ellest, cus repelli gendiore lis eosae
+    voles quo cus illiatium vel
+
+skills:
+    -
+        level: 80
+        content: >
+            sf sdfz fsds fsd f<br>sf sdfs fs
+            sf dsd fsd fs dfs dfs
+            sd f d s ffs sf sfd
+    -
+        level: 60
+        content: >
+            sfs sfeze ze fzefezf ezfzef ze
+            <br>sdfsdfsd dfsd fsd ffsd f
+
+    -
+        level: 50
+        content: >
+            Adobe Photoshop / Adobe Flex <br>Flash Action script
