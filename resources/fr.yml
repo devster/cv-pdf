@@ -11,7 +11,7 @@ meta:
     author: Jeremy PERRET
 
 name: Jeremy Perret
-title: "Lead développeur web & Expert PHP, 7 ans d'expérience"
+title: "Lead développeur & Expert PHP"
 image: portrait.jpg
 
 menu:
@@ -26,7 +26,7 @@ contact:
     Age: "28 ans, 27 Janvier 1987"
     Téléphone: +336 09 88 25 39
     Email: jeremy@devster.org
-    Adresse: "14 Av. de Chevéne 74000 Annecy"
+    Adresse: "3 rue Denuzière 69002 LYON"
     Github: https://github.com/devster
 
 education:
@@ -43,14 +43,14 @@ education:
 
 experiences:
     -
-        title: "Lead développeur web, Cospirit"
+        title: "Lead développeur, Cospirit"
         date: depuis 2015
         link: http://www.cospirit.com/
         content: >
-            - Refonte de la plateforme Saas de marketing opérationnel, outil majeur pour
-            <br>  les campagnes de leurs clients.
+            - Refonte de la plateforme Saas de marketing opérationnel.
+            <br>  Infra. Debian/Proxmox/Ansible
             <br>  Architecture en micro-services. API REST HAL+json
-            <br>  PHP/Symfony2/PostGre/Nodejs/Vagrant/Docker/Behat
+            <br>  PHP/Symfony2/PostGre/Nodejs/Vagrant/Docker/Behat/Jenkins
             <br>- Recrutement de l'équipe.
     -
         title: "Lead développeur web, Zol, Web agency"
@@ -58,8 +58,8 @@ experiences:
         link: http://zol.fr
         content: >
             - Manager d'une équipe de 5 personnes, Huttopia : application interne de <br>  gestion de campings. PHP/Symfony2/Postgre/Docker/API REST
-            <br>- Lead dev d'une équipe de 7 personnes, Sensiolabs :  site de vente de<br>  produits locaux. PHP/Symfony2/MySQL/Magento
-            <br>- Consultant pour M6Web : PHP/Symony2/Redis/Vagrant
+            <br>- Lead dev d'une équipe de 7 personnes, Sensiolabs :  site de vente de<br>  produits locaux. PHP/Symfony2/MySQL/Magento/Ansible
+            <br>- Consultant pour M6Web : PHP/Symony2/Redis/Vagrant/Ansible
             <br>- Lead dev, Marionnaud : Application gestion de stock.<br>  PHP/Symfony2/Oracle/Docker
             <br>- Lead dev application mobile Android et IOS pour Fantasy Poker Manager.<br>  Phonegap/Backbone/API REST Symfony2/MySQL
             <br>- Développeur, Elao : site de réservation de logements étudiant.<br>  PHP/Symfony2/Postgre/Vagrant/SCRUM
@@ -70,7 +70,7 @@ experiences:
         date: 2013 - 2014
         content: >
             - <strong><a href="http://priority.bnpparibas.com/privileges/fr-fr/">BNP Paribas</a></strong> : Site de contenu multilingue.<br>  PHP/Zend Framework/MySQL/Vagrant
-            <br>- <strong><a href="http://jaune-pivoine.fr">Jaune Pivoine</a></strong> : Site vitrine, portfolio - Hébergement.<br>  PHP/Symfony2/Docker/Nginx
+            <br>- <strong><a href="http://jaune-pivoine.fr">Jaune Pivoine</a></strong> : Site vitrine, portfolio - Hébergement.<br>  PHP/Symfony2/Docker/Nginx/Infra. Ansible
 
     -
         title: "Développeur web, Starterre"
@@ -94,17 +94,13 @@ experiences:
             Création d'un outil intranet de réservation du restaurant.
             PHP/MySQL
 
-profile: >
-    Durant mon parcours professionnel, j'ai été amené à manager des équipes de développement de différentes tailles.
-    Ces expériences me permettent aujourd’hui, dans des contextes variés, de composer efficacement avec les contraintes afin de finaliser les projets dans le respect des impératifs.
-    Ma principale force savoir répondre aux imprévus et engager des processus de décision collective pour définir des objectifs précis et réalistes.
-    J’ai à cœur de poursuivre dans cette voie en encourageant les collaborateurs à développer leurs talents tout en continuant à m’améliorer tant techniquement qu’humainement.
+profile: ~
 
 skills:
     -
         title: Backend
         content: >
-            POO, programmation MVC, Respect PSR-2
+            POO, programmation MVC, Respect PSR-*
             <br>Symfony2, Symfony1, Silex,
             <br>Zend Framework, Nodejs
             <br>MySQL, Postgre, Oracle, Redis
@@ -113,7 +109,7 @@ skills:
     -
         title: Devops
         content: >
-            Admin LAMP, admin Debian, Docker, Vagrant, Provisionning ansible, Satis
+            Admin. LAMP, Debian, Docker, Vagrant, Provisionning Ansible, Satis
             <br>Scripting Bash
             <br>Gestionnaire de version git, SVN
             <br>Intégration continue Jenkins, Travis
@@ -121,6 +117,5 @@ skills:
     -
         title: Frontend
         content: >
-            Javascript ES6, Backbone, Bower, gulp,
-            Phonegap, Google material, Bootstrap
-            HTML5, CSS3, SASS
+            Javascript ES6, Backbone, gulp,
+            Phonegap, HTML5, CSS3, SASS
