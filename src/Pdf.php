@@ -15,9 +15,23 @@ class Pdf extends TCPDF
      */
     protected $extraFonts = [];
 
-    public function __construct($data)
+    /**
+     * @var boolean
+     */
+    protected $thin;
+
+    /**
+     * @var array
+     */
+    protected $tableFonts = [
+        'montserrat' => 'times',
+        // 'latolight' => 'dejavusans',
+    ];
+
+    public function __construct($data, $thin = false)
     {
         $this->data = $data;
+        $this->thin = $thin;
         parent::__construct($orientation='Portrait', $unit='mm', $format='A4');
 
         $this->SetCreator($data['meta']['creator']);
@@ -32,7 +46,9 @@ class Pdf extends TCPDF
         $this->SetFooterMargin(0);
         $this->SetAutoPageBreak(false);
         $this->setHtmlLinksStyle($data['colors']['links'], '');
-        $this->setFontSubsetting(false);
+        if (!$thin) {
+            $this->setFontSubsetting(false);
+        }
 
         $this->AddPage();
 
@@ -70,7 +86,7 @@ class Pdf extends TCPDF
 
         // skills line
         $this->SetLineStyle(['width' => self::INLINE_BORDER, 'color' => $this->data['colors']['pageBorder']]);
-        $this->Line(133, 136, 210, 136);
+        $this->Line(133, 100, 210, 100);
 
         // contact line
         $this->SetLineStyle(['width' => self::INLINE_BORDER, 'color' => $this->data['colors']['pageBorder']]);
@@ -172,11 +188,16 @@ class Pdf extends TCPDF
 
         $this->drawSubtitle($this->data['menu']['profile']);
 
+
         $this->setFontSpacing(0.05);
-        $this->SetX($this->GetX()+140);
         $this->SetTextColorArray($this->data['colors']['textlight']);
+
+        $this->SetXY(140, 72);
+        $this->useFont('latomedium', 8.5, '');
+        $this->Cell($w = 0, $h=0, $this->data['profile']['xp'], $border=0, $ln=0, $align='L', $fill=false, $link = '', $stretch=0, $ignore_min_height=false, $calign='T', $valign='T');
+
         $this->useFont('latolight', 8.5, '');
-        $this->MultiCell($w = 64, $h=0, $this->data['profile'], $border=0, $align='L', $fill=false, $ln=1, $x=140, $y=72, $reseth=true, $stretch=0, $ishtml=false, $autopadding=true, $maxh=0, $valign='T', $fitcell=false);
+        $this->MultiCell($w = 64, $h=0, $this->data['profile']['content'], $border=0, $align='L', $fill=false, $ln=1, $x=140, $y=78, $reseth=true, $stretch=0, $ishtml=true, $autopadding=true, $maxh=0, $valign='T', $fitcell=false);
     }
 
     public function drawContact()
@@ -216,7 +237,7 @@ class Pdf extends TCPDF
     public function drawSkills()
     {
         $x = 140;
-        $y = 142;
+        $y = 106;
         $this->SetXY($x, $y);
         $this->drawSubtitle($this->data['menu']['skills']);
         $this->SetY($y+4);
@@ -256,6 +277,10 @@ class Pdf extends TCPDF
 
     protected function useFont($name, $size, $style = '')
     {
+        if ($this->thin && array_key_exists($name, $this->tableFonts)) {
+            $name = $this->tableFonts[$name];
+        }
+
         $this->SetFont($name, $style, $size);
     }
 }

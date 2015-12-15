@@ -12,7 +12,7 @@ $file = isset($argv[2]) ? $argv[2] : __DIR__.'/'.$defaultname;
 // Load locale file
 $array = \Symfony\Component\Yaml\Yaml::parse(file_get_contents(sprintf('%s/resources/%s.yml', __DIR__, $locale)));
 
-$pdf = new Pdf($array);
+$pdf = new Pdf($array, (bool) getenv('THIN_PDF'));
 
 // writing the pdf
 printf("--> Writing %s\n", $file);
