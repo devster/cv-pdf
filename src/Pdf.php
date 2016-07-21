@@ -30,6 +30,11 @@ class Pdf extends TCPDF
 
     public function __construct($data, $thin = false)
     {
+        // check for GD extension (for the profile image)
+        if (!extension_loaded("gd")) {
+            throw new \Exception("GD extension is required, mainly for the profile picture");
+        }
+
         $this->data = $data;
         $this->thin = $thin;
         parent::__construct($orientation='Portrait', $unit='mm', $format='A4');
@@ -171,6 +176,11 @@ class Pdf extends TCPDF
         $this->useFont('lato', 9, '');
         $w = $this->GetStringWidth($date);
         $this->Cell($w, $h=4.8, $date, $border=0, $ln=0, $align='L', $fill=false, $link='', $stretch=0, $ignore_min_height=false, $calign='T', $valign='B');
+
+        if (empty($content)) {
+            $this->SetY($this->GetY()+1);
+            return;
+        }
 
         $content = str_replace('\n', "\n", $content);
         $this->setFontSpacing(0.05);

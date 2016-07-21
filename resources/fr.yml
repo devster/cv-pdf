@@ -6,8 +6,8 @@ colors:
     links: [0,0,0,85]
 meta:
     creator: https://github.com/devster/cv-pdf
-    title: CV 2015 Jeremy Perret
-    subject: CV 2015 Jeremy Perret
+    title: CV 2016 Jeremy Perret
+    subject: CV 2016 Jeremy Perret
     author: Jeremy PERRET
 
 name: Jeremy Perret
@@ -43,8 +43,15 @@ education:
 
 experiences:
     -
+        title: "Architecte logiciel/web, Holimetrix"
+        date: depuis avril 2016
+        link: http://holimetrix.com
+        content: >
+            - Développement de l'application web de statistiques
+            <br>  API REST PHP/Silex/MySQL et Front Angular/d3.js
+    -
         title: "Lead développeur, Cospirit"
-        date: depuis 2015
+        date: 2015 - 2016
         link: http://www.cospirit.com/
         content: >
             - Refonte de la plateforme Saas de marketing opérationnel.
@@ -63,7 +70,7 @@ experiences:
             <br>- Lead dev, Marionnaud : Application gestion de stock.<br>  PHP/Symfony2/Oracle/Docker
             <br>- Lead dev application mobile Android et IOS pour Fantasy Poker Manager.<br>  Phonegap/Backbone/API REST Symfony2/MySQL
             <br>- Développeur, Elao : site de réservation de logements étudiant, adele.org.<br>  PHP/Symfony2/Postgre/Vagrant/SCRUM
-            <br>- Développeur, Bally Technologies : système de gestion de sites de poker.<br>  PHP/Symfony1/MySQL
+            <br>- Développeur, Bally Technologies : système de gestion de sites de poker en <br>  marque blanche. PHP/Symfony1/MySQL
             <br>- Aide au recrutement de collaborateurs
     -
         title: "Freelance"
@@ -84,18 +91,15 @@ experiences:
     -
         title: "Développeur web, Intellimed Consulting"
         date: 2008 - 2009
-        content: >
-            Boutique Prestashop et sites de contenu wordpress, SEO AdWords
+        content: ~
     -
         title: "Développeur web, Institut Paul Bocuse"
         date: 2007
         link: http://www.institutpaulbocuse.com/
-        content: >
-            Création d'un outil intranet de réservation du restaurant.
-            PHP/MySQL
+        content: ~
 
 profile:
-    xp: 7 ans d'expérience
+    xp: 8 ans d'expérience
     content: >
         <br>Lead développeur / chef d'équipe
         <br>Site web / Application métier / Architecture
@@ -106,7 +110,7 @@ skills:
         title: Backend
         content: >
             POO, programmation MVC, Respect PSR-*
-            <br>Symfony2, Symfony1, Silex,
+            <br>Symfony2/3, Symfony1, Silex,
             <br>Zend Framework, Nodejs
             <br>MySQL, Postgre, Oracle, Redis
             <br>ORM Doctrine, Propel
