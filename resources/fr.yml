@@ -6,8 +6,8 @@ colors:
     links: [0,0,0,85]
 meta:
     creator: https://github.com/devster/cv-pdf
-    title: CV 2016 Jeremy Perret
-    subject: CV 2016 Jeremy Perret
+    title: CV 2017 Jeremy Perret
+    subject: CV 2017 Jeremy Perret
     author: Jeremy PERRET
 
 name: Jeremy Perret
@@ -23,7 +23,7 @@ menu:
 
 contact:
     Nationalité: Française
-    Age: "29 ans, 27 Janvier 1987"
+    Age: "30 ans, 27 Janvier 1987"
     Téléphone: +336 09 88 25 39
     Email: jeremy@devster.org
     Adresse: "3 rue Denuzière 69002 LYON"
@@ -43,19 +43,22 @@ education:
 
 experiences:
     -
-        title: "Architecte logiciel/web, Holimetrix"
+        title: "Architecte logiciel/Lead dev, Holimetrix"
         date: depuis avril 2016
         link: http://holimetrix.com
         content: >
-            - Développement de l'application web de statistiques
-            <br>  API REST PHP/Silex/MySQL et Front Angular/d3.js
+            Solution Saas d'analytics de campagnes pub. TV - équipe de 4 dev, forte volumétrie de données (bases Mysql +3To)<br>
+            - Industrialisation, Code review, création d'un env. de développement<br>
+            - Mise en place d'une intégration Continue, Jenkins/Travis<br>
+            - Gestion de l'infrastructure web, Debian/Ansible/Nginx/PHP-FPM<br>
+            - Architecture et développement des applciations web.<br>Api REST/Symfony3/MariaDB
     -
         title: "Lead développeur, Cospirit"
         date: 2015 - 2016
         link: http://www.cospirit.com/
         content: >
-            - Refonte de la plateforme Saas de marketing opérationnel.
-            <br>  Infra. Debian/Proxmox/Ansible
+            - Refonte de la plateforme Saas de vente de marketing opérationnel.
+            <br>  Infrastructure Debian/Proxmox/Ansible
             <br>  Architecture en micro-services. API REST HAL+json
             <br>  PHP/Symfony2/PostGre/Nodejs/Vagrant/Docker/Behat/Jenkins
             <br>- Recrutement de l'équipe.
@@ -66,12 +69,11 @@ experiences:
         content: >
             - Lead dev d'une équipe de 5 personnes, Huttopia : application interne de <br>  gestion de campings. PHP/Symfony2/Postgre/Docker/API REST
             <br>- Lead dev d'une équipe de 7 personnes, Sensiolabs :  site de vente de<br>  produits locaux. PHP/Symfony2/MySQL/Magento/Ansible
-            <br>- Consultant pour M6Web : PHP/Symony2/Redis/Vagrant/Ansible
+            <br>- Consultant pour M6Web : PHP/Symony2/Redis
             <br>- Lead dev, Marionnaud : Application gestion de stock.<br>  PHP/Symfony2/Oracle/Docker
             <br>- Lead dev application mobile Android et IOS pour Fantasy Poker Manager.<br>  Phonegap/Backbone/API REST Symfony2/MySQL
-            <br>- Développeur, Elao : site de réservation de logements étudiant, adele.org.<br>  PHP/Symfony2/Postgre/Vagrant/SCRUM
-            <br>- Développeur, Bally Technologies : système de gestion de sites de poker en <br>  marque blanche. PHP/Symfony1/MySQL
-            <br>- Aide au recrutement de collaborateurs
+            <br>- Développeur, Elao : site de réservation de logements étudiant, adele.org.<br>  PHP/Symfony2/Postgre/Vagrant
+        # <br>- Développeur, Bally Technologies : système de gestion de sites de poker en <br>  marque blanche. PHP/Symfony1/MySQL
     -
         title: "Freelance"
         date: 2013 - 2014
@@ -112,13 +114,14 @@ skills:
             POO, programmation MVC, Respect PSR-*
             <br>Symfony2/3, Symfony1, Silex,
             <br>Zend Framework, Nodejs
-            <br>MySQL, Postgre, Oracle, Redis
+            <br>MySQL, MariaDB, Postgre, Redis
             <br>ORM Doctrine, Propel
             <br>Tests unitaires et fonctionnels PHPUnit, Behat, PHPSpec
+            <br>Monitoring applicatif: Sentry, Tideways
     -
         title: Devops
         content: >
-            Admin. LAMP, Debian, Docker, Vagrant, Provisionning Ansible, Satis
+            Nginx, Debian, Docker, Vagrant, Provisionning Ansible,
             <br>Scripting Bash
             <br>Gestionnaire de version git, SVN
             <br>Intégration continue Jenkins, Travis
