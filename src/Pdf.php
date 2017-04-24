@@ -119,13 +119,13 @@ class Pdf extends TCPDF
 
     public function drawExperiences()
     {
-        $this->drawTitle($this->data['menu']['experience'], 11, $this->GetY());
+        $this->drawTitle($this->data['menu']['experience'], 11, $this->GetY()-4);
         $this->SetY($this->GetY() + 13);
 
         foreach ($this->data['experiences'] as $d) {
             $this->SetX(10);
             $this->drawContent($d['title'], $d['date'], $d['content'], isset($d['link']) ? $d['link'] : null);
-            $this->SetY($this->GetY()+4);
+            $this->SetY($this->GetY()+3);
         }
     }
 
